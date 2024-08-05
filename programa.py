@@ -1,3 +1,4 @@
+import math
 # 1 Escribe un programa en Python que imprima tu nombre en la pantalla.
 def imprimir_nombre():
     print("Diego Saavedra")
@@ -41,13 +42,13 @@ if __name__ == "__main__":
 # # 5 Crea una función que calcule el área de un círculo dado su radio.
 # import math
 
-# def area_circulo(radio):
-#     area = math.pi * radio ** 2  # Se calcula el área del círculo utilizando la fórmula matemática
-#     # Se devuelve el área calculada
+def area_circulo(radio):
+    area = math.pi * radio ** 2  # Se calcula el área del círculo utilizando la fórmula matemática
+    return area # Se devuelve el área calculada
 
-# if __name__ == "__main__":
-#     radio = float(input("Ingrese el radio del círculo: "))  # Se solicita al usuario que ingrese el radio del círculo
-#     # Se imprime el área calculada del círculo
+if __name__ == "__main__":
+    radio = float(input("Ingrese el radio del círculo: "))  # Se solicita al usuario que ingrese el radio del círculo
+    print("El área del círculo es:", area_circulo(radio)) # Se imprime el área calculada del círculo
 
 # # 6 Define una función que reciba dos números como argumentos y devuelva su suma.
 # def suma(a, b):
